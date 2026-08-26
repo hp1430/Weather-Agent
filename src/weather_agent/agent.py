@@ -44,7 +44,7 @@ def run_agent_turns(messages: list, max_turns: int = MAX_TURNS) -> str:
                     "type": "function",
                     "function": {
                         "name": call.function.name,
-                        "arguments": json.dumps(call.function,arguments)
+                        "arguments": json.dumps(call.function.arguments)
                     }
                 } for call in message.tool_calls
             ]
