@@ -18,3 +18,7 @@ WEATHER_CODES: dict[int, str] = {
     95: "thunderstorm",
     96: "thunderstorm with hail",
 }
+
+MAX_TURNS = 10
+
+MAX_TOKENS = 500
